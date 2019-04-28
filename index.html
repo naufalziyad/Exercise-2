@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/kalkulator.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Hello This is List My Exercise</h2>
+        <div class="row">
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Exercise 2</button>
+        </div>
+        <br>
+        <div class="row">
+            <a href="https://github.com/naufalziyad/exercise-1" class="btn btn-info btn-lg">Exercise 1</a>
+        </div>
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Kalkulator</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div id="display">
+                            <div></div>
+                        </div>
+                        <div id="panel">
+                            <div class="x-row">
+                                <input type="button" class="double-x" value="Reset" data-type="command" />
+                                <input type="button" class="small" value="÷" id="add" data-type="operator" />
+                                <input type="button" class="small" value="×" id="multiply" data-type="operator" />
+                            </div>
+                            <div class="row-block">
+                                <div class="row">
+                                    <input type="button" class="small" value="7" data-type="value" />
+                                    <input type="button" class="small" value="8" data-type="value" />
+                                    <input type="button" class="small" value="9" data-type="value" />
+                                </div>
+                                <div class="row">
+                                    <input type="button" class="small" value="4" data-type="value" />
+                                    <input type="button" class="small" value="5" data-type="value" />
+                                    <input type="button" class="small" value="6" data-type="value" />
+                                </div>
+                                <div class="row">
+                                    <input type="button" class="small" value="1" data-type="value" />
+                                    <input type="button" class="small" value="2" data-type="value" />
+                                    <input type="button" class="small" value="3" data-type="value" />
+                                </div>
+                                <div class="row">
+                                    <input type="button" class="double-x" value="0" data-type="value" />
+                                    <input type="button" class="small" value="." data-type="value" />
+                                </div>
+                            </div>
+                            <div class="y-row">
+                                <input type="button" class="small" value="-" id="subtract" data-type="operator" />
+                                <input type="button" class="small" value="+" id="divide" data-type="operator" />
+                                <input type="button" class="double-y" value="=" data-type="command" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/kalkulator.js"></script>
+    
+</body>
+
+</html>
